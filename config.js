@@ -1,4 +1,4 @@
-const PROXY_BASE = '';
+const PROXY_BASE = 'https://atmp-api.onrender.com';
 const ACCOUNT_COUNT = 1;
 const MAX_ACCOUNTS  = 50;
 
