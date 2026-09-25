@@ -3,23 +3,22 @@ require('dotenv').config();
 const express = require('express');
 const cors    = require('cors');
 const axios   = require('axios');
-const fs      = require('fs');
 const path    = require('path');
+const { createClient } = require('@supabase/supabase-js');
 
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 
-app.use((req, res, next) => {
-    if (req.path === '/history.json') return res.status(403).end();
-    if (req.path === '/player-cache.json') return res.status(403).end();
-    next();
-});
-
 app.use(express.static('.'));
 
 const PORT = process.env.PORT || 3000;
 const RIOT_API_KEY = process.env.RIOT_API_KEY;
+
+const supabase = createClient(
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_KEY
+);
 
 const REGIONAL_ROUTE = {
     na1: 'americas', br1: 'americas', la1: 'americas', la2: 'americas', pbe1: 'americas',
@@ -161,8 +160,6 @@ async function riotGet(url, ttl, label) {
         const status = err.response ? err.response.status : 0;
 
         if (status === 429) {
-
-
             const retryAfter = err.response.headers['retry-after'] || '?';
             logErr(id, '429', `${Date.now() - started}ms ${tag} | retry-after ${retryAfter}s`);
         } else {
@@ -227,86 +224,30 @@ app.get('/summoner/:region/:puuid', (req, res) => {
     );
 });
 
-const HISTORY_FILE  = path.join(__dirname, 'history.json');
-const HISTORY_LIMIT = 500;
-
 const isSafeId = id => /^[A-Za-z0-9_-]{1,64}$/.test(id);
 
-function loadHistory() {
-    let raw;
-    try {
-        raw = fs.readFileSync(HISTORY_FILE, 'utf8');
-    } catch (err) {
-        if (err.code !== 'ENOENT') console.warn('history.json unreadable:', err.message);
-        return {};
-    }
-    if (!raw.trim()) return {};
+const HISTORY_LIMIT = 500;
 
-    let parsed;
-    try {
-        parsed = JSON.parse(raw);
-    } catch (err) {
-        console.warn('history.json is corrupt, starting fresh:', err.message);
-        return {};
-    }
-    if (!parsed || typeof parsed !== 'object') return {};
-
-    const out = {};
-    for (const [id, value] of Object.entries(parsed)) {
-        if (Array.isArray(value)) {
-            out[id] = { name: null, history: value };
-        } else if (value && Array.isArray(value.history)) {
-            out[id] = { name: value.name || null, history: value.history };
-        }
-    }
-    return out;
-}
-
-function serializeHistory(data) {
-    const blocks = Object.keys(data).map(id => {
-        const record  = data[id] || { name: null, history: [] };
-        const entries = record.history || [];
-
-        const lines = [`  ${JSON.stringify(id)}: {`];
-        if (record.name) lines.push(`    "name": ${JSON.stringify(record.name)},`);
-
-        if (entries.length === 0) {
-            lines.push(`    "history": []`);
-        } else {
-            lines.push(`    "history": [`);
-            entries.forEach((e, i) => {
-                const comma = i < entries.length - 1 ? ',' : '';
-                lines.push(
-                    `      { "date": ${JSON.stringify(e.date)}, "points": ${e.points} }${comma}`
-                );
-            });
-            lines.push(`    ]`);
-        }
-
-        lines.push(`  }`);
-        return lines.join('\n');
-    });
-
-    return '{\n' + blocks.join(',\n') + '\n}\n';
-}
-
-function saveHistory() {
-    const tmp = HISTORY_FILE + '.tmp';
-    fs.writeFileSync(tmp, serializeHistory(history));
-    fs.renameSync(tmp, HISTORY_FILE);
-}
-
-let history = loadHistory();
-
-app.get('/history/:playerId', (req, res) => {
+app.get('/history/:playerId', async (req, res) => {
     const { playerId } = req.params;
     if (!isSafeId(playerId)) return res.status(400).json({ error: 'Invalid player id.' });
 
-    const record = history[playerId];
-    res.json(record ? record.history : []);
+    const { data, error } = await supabase
+        .from('mastery_history')
+        .select('points, recorded_at')
+        .eq('player_id', playerId)
+        .order('recorded_at', { ascending: true })
+        .limit(HISTORY_LIMIT);
+
+    if (error) {
+        console.error('Supabase history read failed:', error.message);
+        return res.status(500).json({ error: error.message });
+    }
+
+    res.json((data || []).map(r => ({ date: r.recorded_at, points: r.points })));
 });
 
-app.post('/history/:playerId', (req, res) => {
+app.post('/history/:playerId', async (req, res) => {
     const { playerId } = req.params;
     if (!isSafeId(playerId)) return res.status(400).json({ error: 'Invalid player id.' });
 
@@ -318,62 +259,91 @@ app.post('/history/:playerId', (req, res) => {
 
     const name = typeof body.name === 'string' ? body.name.slice(0, 64) : null;
 
-    const record = history[playerId] || (history[playerId] = { name: null, history: [] });
-    if (name) record.name = name;
+    const { error: readErr, data: lastRows } = await supabase
+        .from('mastery_history')
+        .select('id, points')
+        .eq('player_id', playerId)
+        .order('recorded_at', { ascending: false })
+        .limit(1);
 
-    const entries = record.history;
-    const last    = entries[entries.length - 1];
+    if (readErr) {
+        console.error('Supabase history read-before-write failed:', readErr.message);
+        return res.status(500).json({ error: readErr.message });
+    }
+
+    const last = lastRows && lastRows[0];
 
     if (last && last.points === points) {
-        last.date = new Date().toISOString();
+        const { error: updateErr } = await supabase
+            .from('mastery_history')
+            .update({ recorded_at: new Date().toISOString() })
+            .eq('id', last.id);
+
+        if (updateErr) {
+            console.error('Supabase history update failed:', updateErr.message);
+            return res.status(500).json({ error: updateErr.message });
+        }
     } else {
-        entries.push({ date: new Date().toISOString(), points });
-        if (entries.length > HISTORY_LIMIT) entries.splice(0, entries.length - HISTORY_LIMIT);
+        const { error: insertErr } = await supabase
+            .from('mastery_history')
+            .insert({ player_id: playerId, player_name: name, points });
+
+        if (insertErr) {
+            console.error('Supabase history insert failed:', insertErr.message);
+            return res.status(500).json({ error: insertErr.message });
+        }
+
+        const { data: excess } = await supabase
+            .from('mastery_history')
+            .select('id')
+            .eq('player_id', playerId)
+            .order('recorded_at', { ascending: false })
+            .range(HISTORY_LIMIT, HISTORY_LIMIT + 500);
+
+        if (excess && excess.length > 0) {
+            const { error: pruneErr } = await supabase
+                .from('mastery_history')
+                .delete()
+                .in('id', excess.map(r => r.id));
+
+            if (pruneErr) console.warn('Could not prune old history:', pruneErr.message);
+        }
     }
 
-    try {
-        saveHistory();
-    } catch (err) {
-        console.error('Could not write history.json:', err.message);
-        return res.status(500).json({ error: 'Could not save history.' });
+    const { data: all, error: fetchErr } = await supabase
+        .from('mastery_history')
+        .select('points, recorded_at')
+        .eq('player_id', playerId)
+        .order('recorded_at', { ascending: true })
+        .limit(HISTORY_LIMIT);
+
+    if (fetchErr) {
+        console.error('Supabase history re-read failed:', fetchErr.message);
+        return res.status(500).json({ error: fetchErr.message });
     }
 
-    res.json(entries);
+    res.json((all || []).map(r => ({ date: r.recorded_at, points: r.points })));
 });
 
-const CACHE_FILE = path.join(__dirname, 'player-cache.json');
-
-function loadPlayerCache() {
-    try {
-        const raw = fs.readFileSync(CACHE_FILE, 'utf8');
-        if (!raw.trim()) return {};
-        const parsed = JSON.parse(raw);
-        return (parsed && typeof parsed === 'object') ? parsed : {};
-    } catch (err) {
-        if (err.code !== 'ENOENT') console.warn('player-cache.json unreadable:', err.message);
-        return {};
-    }
-}
-
-function savePlayerCache() {
-    const tmp = CACHE_FILE + '.tmp';
-
-    const lines = Object.keys(playerCache).map(id =>
-        `  ${JSON.stringify(id)}: ${JSON.stringify(playerCache[id])}`
-    );
-    fs.writeFileSync(tmp, '{\n' + lines.join(',\n') + '\n}\n');
-    fs.renameSync(tmp, CACHE_FILE);
-}
-
-let playerCache = loadPlayerCache();
-
-app.get('/player-cache/:playerId', (req, res) => {
+app.get('/player-cache/:playerId', async (req, res) => {
     const { playerId } = req.params;
     if (!isSafeId(playerId)) return res.status(400).json({ error: 'Invalid player id.' });
-    res.json(playerCache[playerId] || null);
+
+    const { data, error } = await supabase
+        .from('player_cache')
+        .select('data')
+        .eq('player_id', playerId)
+        .maybeSingle();
+
+    if (error) {
+        console.error('Supabase cache read failed:', error.message);
+        return res.status(500).json({ error: error.message });
+    }
+
+    res.json(data ? data.data : null);
 });
 
-app.post('/player-cache/:playerId', (req, res) => {
+app.post('/player-cache/:playerId', async (req, res) => {
     const { playerId } = req.params;
     if (!isSafeId(playerId)) return res.status(400).json({ error: 'Invalid player id.' });
 
@@ -382,25 +352,32 @@ app.post('/player-cache/:playerId', (req, res) => {
         return res.status(400).json({ error: 'Body must be an object with a `list` array.' });
     }
 
-    playerCache[playerId] = {
-        name:         typeof body.name === 'string' ? body.name.slice(0, 64) : null,
-        updated:      new Date().toISOString(),
-        accountCount: Number(body.accountCount) || 0,
-        totalPoints:  Number(body.totalPoints) || 0,
-        list:         body.list,
-        perAccount:   Array.isArray(body.perAccount) ? body.perAccount : [],
-        failures:     Array.isArray(body.failures) ? body.failures : [],
-        timePlayed:   body.timePlayed || null
+    const data = {
+        list:       body.list,
+        perAccount: Array.isArray(body.perAccount) ? body.perAccount : [],
+        failures:   Array.isArray(body.failures) ? body.failures : [],
+        timePlayed: body.timePlayed || null
     };
 
-    try {
-        savePlayerCache();
-    } catch (err) {
-        console.error('Could not write player-cache.json:', err.message);
-        return res.status(500).json({ error: 'Could not save cache.' });
+    const record = {
+        player_id:     playerId,
+        name:          typeof body.name === 'string' ? body.name.slice(0, 64) : null,
+        updated_at:    new Date().toISOString(),
+        account_count: Number(body.accountCount) || 0,
+        total_points:  Number(body.totalPoints) || 0,
+        data
+    };
+
+    const { error } = await supabase
+        .from('player_cache')
+        .upsert(record, { onConflict: 'player_id' });
+
+    if (error) {
+        console.error('Supabase cache write failed:', error.message);
+        return res.status(500).json({ error: error.message });
     }
 
-    res.json(playerCache[playerId]);
+    res.json(data);
 });
 
 app.get('/rate-status', (req, res) => {
@@ -410,4 +387,6 @@ app.get('/rate-status', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Proxy server running at http://localhost:${PORT}`);
     console.log(`Verbose logging is ${LOG_VERBOSE ? 'ON' : 'OFF'} (LOG_VERBOSE in server.js).`);
+    console.log(`Supabase URL: ${process.env.SUPABASE_URL ? 'configured' : 'MISSING'}`);
+    console.log(`Riot API key: ${process.env.RIOT_API_KEY ? 'configured' : 'MISSING'}`);
 });
