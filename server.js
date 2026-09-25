@@ -331,7 +331,7 @@ app.get('/player-cache/:playerId', async (req, res) => {
 
     const { data, error } = await supabase
         .from('player_cache')
-        .select('data')
+        .select('data, account_count, name, updated_at, total_points')
         .eq('player_id', playerId)
         .maybeSingle();
 
@@ -340,7 +340,15 @@ app.get('/player-cache/:playerId', async (req, res) => {
         return res.status(500).json({ error: error.message });
     }
 
-    res.json(data ? data.data : null);
+    if (!data) return res.json(null);
+
+    res.json({
+        name:         data.name,
+        updated:      data.updated_at,
+        accountCount: data.account_count,
+        totalPoints:  data.total_points,
+        ...data.data
+    });
 });
 
 app.post('/player-cache/:playerId', async (req, res) => {
