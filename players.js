@@ -4086,7 +4086,7 @@ const PLAYERS = [
         name: 'Zoeasyy',
         country: 'uy',
         verified: 'yes',
-        image: 'images/zoeasyy.png',
+        image: 'images/zoeasyy.jpg',
         accounts: [
             { region: 'la2', riotId: 'Zoeasyy#easyy' },
             { region: 'la2', riotId: 'Zoeasyy#Zoe' },
