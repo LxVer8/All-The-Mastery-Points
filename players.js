@@ -931,7 +931,7 @@ const PLAYERS = [
             { region: 'na1', riotId: 'Detention TikTok#Tktk' },
             { region: 'na1', riotId: 'Detention#NA1' },
             { region: 'na1', riotId: 'Detention#DDR' },
-            { region: 'kr', riotId: 'Detention 한국#KR' },
+            { region: 'kr', riotId: 'Detention 한국#KR1' },
 //            { region: 'na1', riotId: 'ワカ ラカ#DDR' },
         ]
     },
@@ -993,10 +993,10 @@ const PLAYERS = [
             { region: 'na1', riotId: 'TopLaner99#NA1' },
             { region: 'na1', riotId: 'TF Blade#NA1' },
             { region: 'na1', riotId: 'JAJA Blade#123' },
-            { region: 'kr', riotId: 'TF Blade2#KR' },
+            { region: 'kr', riotId: 'TF Blade2#KR1' },
             { region: 'euw1', riotId: 'fight with brain#EUW' },
             { region: 'euw1', riotId: 'edaIB FT#EU1' },
-            { region: 'na1', riotId: 'TOPJUNGKING#NA' },
+            { region: 'na1', riotId: 'TOPJUNGKING#NA1' },
 //            { region: 'kr', riotId: 'Last day in KR' },
 //            { region: 'euw1', riotId: 'forsenCDKEKW' },
         ]
@@ -2406,7 +2406,7 @@ const PLAYERS = [
     },
     {
         id: 'p149',
-        name: 'HoldemGammers',
+        name: 'HoldemHammers',
         country: 'es',
         verified: 'no',
         image: 'images/holdemhammers.jpg',
@@ -4073,12 +4073,28 @@ const PLAYERS = [
         accounts: [
             { region: 'euw1', riotId: 'Dzukill#KISS' },
             { region: 'euw1', riotId: 'LR Nemesis#LRAT' },
-            { region: 'euw1', riotId: 'Alexander Duggan#Red' },
             { region: 'euw1', riotId: 'the inescapable#RAT' },
             { region: 'euw1', riotId: 'tehgeokiller#EUW' },
             { region: 'euw1', riotId: 'Mr Ascendant#EUW' },
-            { region: 'euw1', riotId: 'Caedrel#ADS' },
-            { region: 'kr', riotId: 'Sanchovies#MOG' },
+//            { region: 'euw1', riotId: 'Alexander Duggan#Red' }, namechanged?
+//            { region: 'euw1', riotId: 'Caedrel#ADS' }, // namechanged?
+//            { region: 'kr', riotId: 'Sanchovies#MOG' }, // used to own it, maybe he doesnt anymore. the original account doesnt exist, but it seems to have changed its id to KR01. the masteries doesnt line up with the champiosn that nemesis plays though
+        ]
+    },
+    {
+        id: 'p332',
+        name: 'Zoeasyy',
+        country: 'uy',
+        verified: 'yes',
+        image: 'images/zoeasyy.png',
+        accounts: [
+            { region: 'la2', riotId: 'Zoeasyy#easyy' },
+            { region: 'la2', riotId: 'Zoeasyy#Zoe' },
+            { region: 'la2', riotId: 'Zoeasyy 2#ISLAค' },
+            { region: 'la2', riotId: 'Zoeasyy#ISLAค' },
+            { region: 'la2', riotId: '조이 개섹시 개핫 개맛있음#WPPDF' },
+            { region: 'la1', riotId: 'Zoeasyy#Cyan' },
+            { region: 'la1', riotId: 'Zoeasyy#Zoe5' },
         ]
     },
 ]
