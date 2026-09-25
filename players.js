@@ -1807,7 +1807,7 @@ const PLAYERS = [
         name: 'Veigarciano',
         country: 'ar',
         verified: 'yes',
-        image: 'images/Veigarciano.jpg',
+        image: 'images/veigarciano.jpg',
         accounts: [
             { region: 'la2', riotId: 'Veigarciano#Nico' },
             { region: 'la2', riotId: 'MiniBoss#Chall' },
