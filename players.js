@@ -4092,7 +4092,7 @@ const PLAYERS = [
             { region: 'la2', riotId: 'Zoeasyy#Zoe' },
             { region: 'la2', riotId: 'Zoeasyy 2#ISLAค' },
             { region: 'la2', riotId: 'Zoeasyy#ISLAค' },
-            { region: 'la2', riotId: '조이 개섹시 개핫 개맛있음#WPPDF' },
+            { region: 'la2', riotId: 'Zoeasyy#BAN' },
             { region: 'la1', riotId: 'Zoeasyy#Cyan' },
             { region: 'la1', riotId: 'Zoeasyy#Zoe5' },
         ]
