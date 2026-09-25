@@ -35,7 +35,7 @@ const PLAYERS = [
         name: 'Manuela#Sexy',
         country: 'eu',
         verified: 'no',
-        image: 'images/Manuela-Sexy.jpg',
+        image: 'images/manuela-sexy.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Manuela#Sexy' },
         ]
@@ -209,7 +209,7 @@ const PLAYERS = [
         name: 'XikHyper',
         country: 'pl',
         verified: 'yes',
-        image: 'images/XikHyper.png',
+        image: 'images/xikhyper.png',
         accounts: [
             { region: 'eun1', riotId: '1263715263626171#SBP' },
             { region: 'eun1', riotId: 'KanyeEast83#EUNE' },
@@ -226,7 +226,7 @@ const PLAYERS = [
         name: 'Urpog',
         country: 'gb',
         verified: 'yes',
-        image: 'images/Urpog.jpg',
+        image: 'images/urpog.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Urpog#URGOT' },
             { region: 'euw1', riotId: 'Urpog#Urpog' },
@@ -507,7 +507,7 @@ const PLAYERS = [
         name: 'SirKledington',
         country: 'at',
         verified: 'yes',
-        image: 'images/SirKledington.png',
+        image: 'images/sirkledington.png',
         accounts: [
             { region: 'euw1', riotId: 'Kleddy#1337' },
             { region: 'euw1', riotId: 'Sir Kledington#1337' },
@@ -521,7 +521,7 @@ const PLAYERS = [
         name: 'Dun',
         country: 'ca',
         verified: 'no',
-        image: 'images/Dun.jpg',
+        image: 'images/dun.jpg',
         accounts: [
             { region: 'na1', riotId: 'Dun#NA1' },
             { region: 'na1', riotId: 'cupcakes29#NA1' },
@@ -534,7 +534,7 @@ const PLAYERS = [
         name: 'Horkos',
         country: 'us',
         verified: 'yes',
-        image: 'images/Horkos.png',
+        image: 'images/horkos.png',
         accounts: [
             { region: 'na1', riotId: 'Horkos#forge' },
             { region: 'na1', riotId: 'horkos#1234' },
@@ -736,7 +736,7 @@ const PLAYERS = [
         name: 'NoArmWhatley',
         country: 'gb',
         verified: 'no',
-        image: 'images/No Arm Whatley.png',
+        image: 'images/no arm whatley.png',
         accounts: [
             { region: 'euw1', riotId: 'PeppaPigFan31#PIGS' },
             { region: 'euw1', riotId: 'Krug Lord#Krugz' },
@@ -758,7 +758,7 @@ const PLAYERS = [
         name: 'xDavemon',
         country: 'us',
         verified: 'no',
-        image: 'images/xDavemon.png',
+        image: 'images/xdavemon.png',
         accounts: [
             { region: 'na1', riotId: 'Davemon#NA1' },
             { region: 'na1', riotId: 'pizzaman007#NA1' },
@@ -775,7 +775,7 @@ const PLAYERS = [
         name: 'NattyNatt',
         country: 'se',
         verified: 'no',
-        image: 'images/NattyNatt.jpg',
+        image: 'images/nattynatt.jpg',
         accounts: [
             { region: 'euw1', riotId: 'NattyNatt#2005' },
             { region: 'euw1', riotId: 'EZ ROLE LOOLAY#EASY' },
@@ -877,7 +877,7 @@ const PLAYERS = [
         name: 'MoistCr1TiKaL',
         country: 'us',
         verified: 'no',
-        image: 'images/MoistCr1TiKaL.jpg',
+        image: 'images/moistcr1tikal.jpg',
         accounts: [
             { region: 'na1', riotId: 'moistcr1tikal#NA1' },
         ]
@@ -1021,7 +1021,7 @@ const PLAYERS = [
         name: 'Caedrel',
         country: 'gb',
         verified: 'no',
-        image: 'images/Caedrel.jpg',
+        image: 'images/caedrel.jpg',
         accounts: [
             { region: 'euw1', riotId: 'SOVEREIGN33#QWE' },
             { region: 'euw1', riotId: 'cuh drel#fraud' },
@@ -1083,7 +1083,7 @@ const PLAYERS = [
         name: 'Sanchovies',
         country: 'ca',
         verified: 'no',
-        image: 'images/Sanchovies.png',
+        image: 'images/sanchovies.png',
         accounts: [
             { region: 'euw1', riotId: 'drowsy fever#111' },
             { region: 'euw1', riotId: 'WHEEL#gunga' },
@@ -1101,7 +1101,7 @@ const PLAYERS = [
         name: 'Humzh',
         country: 'us',
         verified: 'no',
-        image: 'images/Humzh.png',
+        image: 'images/humzh.png',
         accounts: [
             { region: 'euw1', riotId: 'RAT IS WASHED#EUW' },
             { region: 'euw1', riotId: 'Brooklyn Prodigy#EUW' },
@@ -1191,7 +1191,7 @@ const PLAYERS = [
         name: 'Elite500',
         country: 'ch',
         verified: 'no',
-        image: 'images/Elite500.jpg',
+        image: 'images/elite500.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Elite500#E500' },
             { region: 'euw1', riotId: 'ADC IS EASY#E500' },
@@ -1234,7 +1234,7 @@ const PLAYERS = [
         name: 'Alicopter',
         country: 'ca',
         verified: 'no',
-        image: 'images/Alicopter.png',
+        image: 'images/alicopter.png',
         accounts: [
             { region: 'euw1', riotId: 'Ali Morrisane#EUWRS' },
             { region: 'euw1', riotId: 'alistarlolcom#euw12' },
@@ -1259,7 +1259,7 @@ const PLAYERS = [
         name: 'SirhcEz',
         country: 'us',
         verified: 'no',
-        image: 'images/SirhcEz.png',
+        image: 'images/sirhcez.png',
         accounts: [
             { region: 'na1', riotId: 'StacksAddiction#NA1' },
             { region: 'na1', riotId: 'Just A Nub IRL#NA1' },
@@ -1278,7 +1278,7 @@ const PLAYERS = [
         name: 'Carnarius_v2',
         country: 'pl',
         verified: 'no',
-        image: 'images/Carnarius.jpg',
+        image: 'images/carnarius.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Carnarius v2#EUW' },
             { region: 'euw1', riotId: 'Carnarastafarius #EUW' },
@@ -1303,7 +1303,7 @@ const PLAYERS = [
         name: 'DirtyMobs',
         country: 'us',
         verified: 'no',
-        image: 'images/DirtyMobs.png',
+        image: 'images/dirtymobs.png',
         accounts: [
             { region: 'na1', riotId: 'DirtyMobs#Mobs' },
             { region: 'na1', riotId: 'TheMobs#NA1' },
@@ -1315,7 +1315,7 @@ const PLAYERS = [
         name: 'ShowMaker',
         country: 'kr',
         verified: 'no',
-        image: 'images/ShowMaker.jpg',
+        image: 'images/showmaker.jpg',
         accounts: [
             { region: 'euw1', riotId: 'nAbB2nYlLKMy2cJA#EUW' },
             { region: 'euw1', riotId: 'good bye iceland#EUW' },
@@ -1331,7 +1331,7 @@ const PLAYERS = [
         name: 'SoloRenektonOnly',
         country: 'us',
         verified: 'no',
-        image: 'images/SoloRenektonOnly.png',
+        image: 'images/solorenektononly.png',
         accounts: [
             { region: 'na1', riotId: 'Big MuteAll Guy#NA1' },
             { region: 'na1', riotId: 'solorenektononly#na1' },
@@ -1344,7 +1344,7 @@ const PLAYERS = [
         name: 'Pusi',
         country: 'de',
         verified: 'no',
-        image: 'images/Pusipuu.png',
+        image: 'images/pusipuu.png',
         accounts: [
             { region: 'euw1', riotId: 'Pusi Puu#EUW' },
             { region: 'euw1', riotId: 'Big P#SILLY' },
@@ -1362,7 +1362,7 @@ const PLAYERS = [
         name: 'Fay31',
         country: 'xx',
         verified: 'yes',
-        image: 'images/Fay31.jpg',
+        image: 'images/fay31.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Poppy31#778' },
             { region: 'euw1', riotId: '31poppi31#777' },
@@ -1377,7 +1377,7 @@ const PLAYERS = [
         name: 'BrokenBlade',
         country: 'de',
         verified: 'no',
-        image: 'images/BrokenBlade.png',
+        image: 'images/brokenblade.png',
         accounts: [
             { region: 'euw1', riotId: 'G2 BrokenBlade#1918' },
             { region: 'euw1', riotId: 'brokenblade22#EUW' },
@@ -1392,7 +1392,7 @@ const PLAYERS = [
         name: 'Yassuo',
         country: 'us',
         verified: 'no',
-        image: 'images/Yassuo.png',
+        image: 'images/yassuo.png',
         accounts: [
             { region: 'kr', riotId: 'Yassuo#KR111' },
             { region: 'kr', riotId: 'Yassuo#KR11' },
@@ -1417,7 +1417,7 @@ const PLAYERS = [
         name: '이렐킹 (IRELKING)',
         country: 'kr',
         verified: 'no',
-        image: 'images/irelking.PNG',
+        image: 'images/irelking.png',
         accounts: [
             { region: 'kr', riotId: 'Aileri#KR1' },
             { region: 'kr', riotId: 'IRELKlNG#KR1' },
@@ -1430,7 +1430,7 @@ const PLAYERS = [
         name: 'Quantum',
         country: 'us',
         verified: 'no',
-        image: 'images/quantum.PNG',
+        image: 'images/quantum.png',
         accounts: [
             { region: 'na1', riotId: 'quantum#uwu' },
         ]
@@ -1440,7 +1440,7 @@ const PLAYERS = [
         name: 'iPav999',
         country: 'us',
         verified: 'no',
-        image: 'images/ipav999.PNG',
+        image: 'images/ipav999.png',
         accounts: [
             { region: 'euw1', riotId: 'Togo#Benin' },
             { region: 'na1', riotId: 'TrashChampool#NA1' },
@@ -1455,7 +1455,7 @@ const PLAYERS = [
         name: 'Lourlo',
         country: 'us',
         verified: 'no',
-        image: 'images/lourlo.PNG',
+        image: 'images/lourlo.png',
         accounts: [
             { region: 'euw1', riotId: 'hide on rock#EUW' },
             { region: 'na1', riotId: 'Lourlo#NA1' },
@@ -1535,7 +1535,7 @@ const PLAYERS = [
         name: 'Josedeodo',
         country: 'ar',
         verified: 'no',
-        image: 'images/Josedeodo.jpg',
+        image: 'images/josedeodo.jpg',
         accounts: [
             { region: 'br1', riotId: 'Josedeodo2#BR1' },
             { region: 'br1', riotId: 'josedeodo#na12' },
@@ -1553,7 +1553,7 @@ const PLAYERS = [
         name: 'Ackerman',
         country: 'ar',
         verified: 'no',
-        image: 'images/Ackerman.jpg',
+        image: 'images/ackerman.jpg',
         accounts: [
             { region: 'na1', riotId: 'ACKÈRMAN#NA1' },
             { region: 'euw1', riotId: 'seventy thirty#EUW' },
@@ -1567,7 +1567,7 @@ const PLAYERS = [
         name: 'Enga',
         country: 'ar',
         verified: 'no',
-        image: 'images/Enga.jpg',
+        image: 'images/enga.jpg',
         accounts: [
             { region: 'br1', riotId: 'Enga#PUNGA' },
         ]
@@ -1672,7 +1672,7 @@ const PLAYERS = [
         name: 'Bearded Shepherd',
         country: 'us',
         verified: 'yes',
-        image: 'images/BeardedShepherd.jpg',
+        image: 'images/beardedshepherd.jpg',
         accounts: [
             { region: 'na1', riotId: 'Bearded Shepherd#Shep' },
             { region: 'na1', riotId: 'Bearded Katarina#NA1' },
@@ -1714,7 +1714,7 @@ const PLAYERS = [
         name: 'V222',
         country: 'kr',
         verified: 'no',
-        image: 'images/V222.png',
+        image: 'images/v222.png',
         accounts: [
             { region: 'euw1', riotId: 'Malone Lam#BLUE' },
             { region: 'euw1', riotId: 'TWTV V222LOL#000' },
@@ -1837,7 +1837,7 @@ const PLAYERS = [
         name: 'Macdemac',
         country: 'ar',
         verified: 'yes',
-        image: 'images/Macdemac.png',
+        image: 'images/macdemac.png',
         accounts: [
             { region: 'br1', riotId: 'QTKuro#BR1' },
             { region: 'br1', riotId: 'teresa fidalgo#unu' },
@@ -1876,7 +1876,7 @@ const PLAYERS = [
         name: 'Nissaxter',
         country: 'es',
         verified: 'no',
-        image: 'images/Nissaxter.png',
+        image: 'images/nissaxter.png',
         accounts: [
             { region: 'euw1', riotId: 'MocoConSangre#KEKW' },
             { region: 'euw1', riotId: '屁股上有粪便#666' },
@@ -2085,7 +2085,7 @@ const PLAYERS = [
         name: 'Attila',
         country: 'pt',
         verified: 'no',
-        image: 'images/Attila.jpg',
+        image: 'images/attila.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Attila#SUP' },
             { region: 'euw1', riotId: 'Attila#ADC4' },
@@ -2127,7 +2127,7 @@ const PLAYERS = [
         name: 'Charolon',
         country: 've',
         verified: 'no',
-        image: 'images/Charolon.png',
+        image: 'images/charolon.png',
         accounts: [
             { region: 'euw1', riotId: 'Charolon#LATAM' },
             { region: 'la1', riotId: 'Charolon#Frog' },
@@ -2154,7 +2154,7 @@ const PLAYERS = [
         name: 'XadowAsol',
         country: 'es',
         verified: 'no',
-        image: 'images/XadowAsol.png',
+        image: 'images/xadowasol.png',
         accounts: [
             { region: 'euw1', riotId: 'El10#XADOW' },
             { region: 'kr', riotId: 'El10#2007' },
@@ -2166,7 +2166,7 @@ const PLAYERS = [
         name: 'Siler',
         country: 'es',
         verified: 'no',
-        image: 'images/Siler.png',
+        image: 'images/siler.png',
         accounts: [
             { region: 'euw1', riotId: 'JNOGALES CORTI#SOL' },
             { region: 'euw1', riotId: 'SALAHUECA#CANNA' },
@@ -2184,7 +2184,7 @@ const PLAYERS = [
         name: 'Th3Antonio',
         country: 'es',
         verified: 'no',
-        image: 'images/Th3Antonio.jpg',
+        image: 'images/th3antonio.jpg',
         accounts: [
             { region: 'euw1', riotId: 'GX TH3#TH3' },
             { region: 'euw1', riotId: 'Th3Antonio#Uwu' },
@@ -2204,7 +2204,7 @@ const PLAYERS = [
         name: 'ElOjoNinja',
         country: 'es',
         verified: 'no',
-        image: 'images/ElOjoNinja.png',
+        image: 'images/elojoninja.png',
         accounts: [
             { region: 'euw1', riotId: '0jete#WOW' },
             { region: 'euw1', riotId: 'EIOjoNinja#EUW' },
@@ -2256,7 +2256,7 @@ const PLAYERS = [
         name: 'Palkiogre',
         country: 'es',
         verified: 'no',
-        image: 'images/Palkiogre.jpg',
+        image: 'images/palkiogre.jpg',
         accounts: [
             { region: 'euw1', riotId: 'PALKIOGRE2#PK2' },
             { region: 'euw1', riotId: 'PALKIOGRE2#IR3N3' },
@@ -2267,7 +2267,7 @@ const PLAYERS = [
         name: 'AdcShiiro',
         country: 'es',
         verified: 'no',
-        image: 'images/AdcShiiro.png',
+        image: 'images/adcshiiro.png',
         accounts: [
             { region: 'euw1', riotId: 'Gor D Roger#2016' },
             { region: 'euw1', riotId: 'Rocks D Xebec#91919' },
@@ -2282,7 +2282,7 @@ const PLAYERS = [
         name: 'PapiSosa',
         country: 'mx',
         verified: 'no',
-        image: 'images/PapiSosa.jpg',
+        image: 'images/papisosa.jpg',
         accounts: [
             { region: 'euw1', riotId: 'PapiDeXokas#LATAM' },
             { region: 'la1', riotId: 'EL TINTINTAN#LAN' },
@@ -2294,7 +2294,7 @@ const PLAYERS = [
         name: 'Dalvenger',
         country: 'es',
         verified: 'no',
-        image: 'images/Dalvenger.jpg',
+        image: 'images/dalvenger.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Soy Poppy entro#ANHQV' },
             { region: 'euw1', riotId: 'Dalvenger#EUW' },
@@ -2305,7 +2305,7 @@ const PLAYERS = [
         name: 'Skain',
         country: 'es',
         verified: 'no',
-        image: 'images/Skain.jpg',
+        image: 'images/skain.jpg',
         accounts: [
             { region: 'euw1', riotId: 'skain#2424' },
             { region: 'euw1', riotId: 'keria nightmare#EUW' },
@@ -2321,7 +2321,7 @@ const PLAYERS = [
         name: 'Werlyb',
         country: 'es',
         verified: 'no',
-        image: 'images/Werlyb.jpg',
+        image: 'images/werlyb.jpg',
         accounts: [
             { region: 'euw1', riotId: 'JorgeCazalobas#ddeo' },
             { region: 'euw1', riotId: 'illo wely#EUW' },
@@ -2338,7 +2338,7 @@ const PLAYERS = [
         name: 'MissPolaroid',
         country: 'es',
         verified: 'no',
-        image: 'images/MissPolaroid.jpg',
+        image: 'images/misspolaroid.jpg',
         accounts: [
             { region: 'euw1', riotId: 'dοiphιnρμssy#mara' },
             { region: 'euw1', riotId: 'Nena con antena#0000' },
@@ -2351,7 +2351,7 @@ const PLAYERS = [
         name: 'ADERTYH',
         country: 'es',
         verified: 'no',
-        image: 'images/ADERTYH.png',
+        image: 'images/adertyh.png',
         accounts: [
             { region: 'euw1', riotId: 'King#UFC' },
             { region: 'euw1', riotId: 'PirotsAbuser#ARG' },
@@ -2362,7 +2362,7 @@ const PLAYERS = [
         name: 'Yonna',
         country: 'es',
         verified: 'no',
-        image: 'images/Yonna.png',
+        image: 'images/yonna.png',
         accounts: [
             { region: 'euw1', riotId: 'Cachivache#SQC' },
             { region: 'euw1', riotId: 'Yonna#000' },
@@ -2424,7 +2424,7 @@ const PLAYERS = [
         name: 'CarmenSandwich',
         country: 'es',
         verified: 'no',
-        image: 'images/CarmenSandwich.png',
+        image: 'images/carmensandwich.png',
         accounts: [
             { region: 'euw1', riotId: 'Motonami#nami' },
             { region: 'euw1', riotId: 'Fresca#UWU' },
@@ -2446,7 +2446,7 @@ const PLAYERS = [
         name: 'PochiPoom',
         country: 'es',
         verified: 'no',
-        image: 'images/PochiPoom.png',
+        image: 'images/pochipoom.png',
         accounts: [
             { region: 'euw1', riotId: 'PochiPoom#POOM' },
             { region: 'euw1', riotId: 'PapaPoom#UCAM' },
@@ -2458,7 +2458,7 @@ const PLAYERS = [
         name: 'AlvaroStorm',
         country: 'es',
         verified: 'no',
-        image: 'images/AlvaroStorm.png',
+        image: 'images/alvarostorm.png',
         accounts: [
             { region: 'euw1', riotId: 'TORMENTITAS#EUW' },
             { region: 'euw1', riotId: 'I wiII faiI it#EUW' },
@@ -2475,7 +2475,7 @@ const PLAYERS = [
         name: 'Fahhhkies',
         country: 'es',
         verified: 'no',
-        image: 'images/Fahhkies.png',
+        image: 'images/fahhkies.png',
         accounts: [
             { region: 'euw1', riotId: 'Fahhkies#EUW' },
             { region: 'euw1', riotId: 'Vakis#MeAso' },
@@ -2487,7 +2487,7 @@ const PLAYERS = [
         name: 'Maiiser',
         country: 'es',
         verified: 'no',
-        image: 'images/Maiiser.jpg',
+        image: 'images/maiiser.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Jabon de Hamster#WIWI' },
             { region: 'euw1', riotId: 'Vaayser#Jabo' },
@@ -2498,7 +2498,7 @@ const PLAYERS = [
         name: 'HolaSoySergio1',
         country: 'es',
         verified: 'no',
-        image: 'images/HolaSoySergio1.png',
+        image: 'images/holasoysergio1.png',
         accounts: [
             { region: 'euw1', riotId: 'CR9mm#EUW' },
             { region: 'euw1', riotId: 'I love FUMAR#humo' },
@@ -2510,7 +2510,7 @@ const PLAYERS = [
         name: 'Karchez',
         country: 'es',
         verified: 'no',
-        image: 'images/Karchez.png',
+        image: 'images/karchez.png',
         accounts: [
             { region: 'euw1', riotId: '챔피언#KR11' },
             { region: 'euw1', riotId: 'COI Karchez#COI' },
@@ -2522,7 +2522,7 @@ const PLAYERS = [
         name: 'PauSenpaii',
         country: 'es',
         verified: 'no',
-        image: 'images/PauSenpaii.png',
+        image: 'images/pausenpaii.png',
         accounts: [
             { region: 'euw1', riotId: 'pepo#miau' },
             { region: 'euw1', riotId: 'pop#snp' },
@@ -2534,7 +2534,7 @@ const PLAYERS = [
         name: 'Mahria',
         country: 'es',
         verified: 'no',
-        image: 'images/Mahriaa.png',
+        image: 'images/mahriaa.png',
         accounts: [
             { region: 'euw1', riotId: 'lucky charm#ahri' },
             { region: 'euw1', riotId: 'bloody mary#πriod' },
@@ -2546,7 +2546,7 @@ const PLAYERS = [
         name: 'Zeling',
         country: 'es',
         verified: 'no',
-        image: 'images/Zeling.png',
+        image: 'images/zeling.png',
         accounts: [
             { region: 'euw1', riotId: 'CiberMendiga#ESP' },
             { region: 'euw1', riotId: 'Altaria Lyns#EUW' },
@@ -2574,7 +2574,7 @@ const PLAYERS = [
         name: 'ElTioBarry',
         country: 'es',
         verified: 'no',
-        image: 'images/ElTioBarry.jpg',
+        image: 'images/eltiobarry.jpg',
         accounts: [
             { region: 'euw1', riotId: 'IL VECCHIO MONO#LOL' },
             { region: 'euw1', riotId: 'Vi ejita RANK 1#EUW' },
@@ -2587,7 +2587,7 @@ const PLAYERS = [
         name: 'Anuj',
         country: 'es',
         verified: 'no',
-        image: 'images/Anuj.png',
+        image: 'images/anuj.png',
         accounts: [
             { region: 'euw1', riotId: 'Ábalos Butanero#PSOE' },
 // no accounts nor league games played on stream at all
@@ -2598,7 +2598,7 @@ const PLAYERS = [
         name: 'Abby',
         country: 'es',
         verified: 'no',
-        image: 'images/Abby.jpg',
+        image: 'images/abby.jpg',
         accounts: [
             { region: 'euw1', riotId: 'toto de loca#WLW' },
             { region: 'euw1', riotId: 'もののけ姫#bae' },
@@ -2611,7 +2611,7 @@ const PLAYERS = [
         name: 'BarbeQ',
         country: 'es',
         verified: 'no',
-        image: 'images/BarbeQ.png',
+        image: 'images/barbeq.png',
         accounts: [
             { region: 'euw1', riotId: 'Calvondish#calvo' },
             { region: 'euw1', riotId: 'BarbeQ#EUW' },
@@ -2622,7 +2622,7 @@ const PLAYERS = [
         name: 'Ahre',
         country: 'ar',
         verified: 'yes',
-        image: 'images/Ahre.png',
+        image: 'images/ahre.png',
         accounts: [
             { region: 'la2', riotId: 'Ahre#ISLAค' },
             { region: 'la2', riotId: 'Reah#xddd' },
@@ -2648,7 +2648,7 @@ const PLAYERS = [
         name: 'Champi',
         country: 'es',
         verified: 'no',
-        image: 'images/Champi.jpg',
+        image: 'images/champi.jpg',
         accounts: [
             { region: 'euw1', riotId: 'NGABO RUDASINWA#WNTED' },
             { region: 'euw1', riotId: 'Keria Cubano#CH14' },
@@ -2660,7 +2660,7 @@ const PLAYERS = [
         name: 'Grekko',
         country: 'ec',
         verified: 'no',
-        image: 'images/Grekko.jpg',
+        image: 'images/grekko.jpg',
         accounts: [
             { region: 'euw1', riotId: 'El Sultán#NEXO' },
             { region: 'euw1', riotId: 'PirataDeCuliacan#vwa' },
@@ -2674,7 +2674,7 @@ const PLAYERS = [
         name: 'Marquez',
         country: 'es',
         verified: 'no',
-        image: 'images/Marquez.jpg',
+        image: 'images/marquez.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Manquez25#PLATA' },
             { region: 'euw1', riotId: 'viEGOplayer#SB5' },
@@ -2686,7 +2686,7 @@ const PLAYERS = [
         name: 'Katth',
         country: 'es',
         verified: 'no',
-        image: 'images/Katth.jpg',
+        image: 'images/katth.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Katthchonda#miu' },
 // check stream to find more accounts
@@ -2697,7 +2697,7 @@ const PLAYERS = [
         name: 'Tamara',
         country: 'es',
         verified: 'no',
-        image: 'images/Tamara.jpg',
+        image: 'images/tamara.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Tami Kench#DOC' },
 // check stream to find more accounts
@@ -2708,7 +2708,7 @@ const PLAYERS = [
         name: 'Ander',
         country: 'es',
         verified: 'no',
-        image: 'images/Ander.jpg',
+        image: 'images/ander.jpg',
         accounts: [
             { region: 'euw1', riotId: 'スペクトラム#017' },
             { region: 'euw1', riotId: 'ANDERTAKER#EUW' },
@@ -2720,7 +2720,7 @@ const PLAYERS = [
         name: 'MFreak',
         country: 'es',
         verified: 'no',
-        image: 'images/MFreak.jpg',
+        image: 'images/mfreak.jpg',
         accounts: [
             { region: 'euw1', riotId: 'KOI Socio 002#AEAT' },
             { region: 'euw1', riotId: 'DWG Nuguri#LPL01' },
@@ -2732,7 +2732,7 @@ const PLAYERS = [
         name: 'Kuentin',
         country: 'es',
         verified: 'no',
-        image: 'images/Kuentin.jpg',
+        image: 'images/kuentin.jpg',
         accounts: [
             { region: 'euw1', riotId: 'KC Kuentin#MKOI' },
             { region: 'euw1', riotId: 'Anti Hero#KOI' },
@@ -2743,7 +2743,7 @@ const PLAYERS = [
         name: 'Mellado',
         country: 'es',
         verified: 'no',
-        image: 'images/Mellado.jpg',
+        image: 'images/mellado.jpg',
         accounts: [
             { region: 'euw1', riotId: 'FlequilloAusente#MKOI' },
 // check stream to find more accounts
@@ -2754,7 +2754,7 @@ const PLAYERS = [
         name: 'Peraltone',
         country: 'es',
         verified: 'no',
-        image: 'images/Peraltone.jpg',
+        image: 'images/peraltone.jpg',
         accounts: [
             { region: 'euw1', riotId: 'MINIPEKKA#SOLOQ' },
 // check stream to find more accounts
@@ -2765,7 +2765,7 @@ const PLAYERS = [
         name: 'ToadAmarillo',
         country: 'es',
         verified: 'no',
-        image: 'images/ToadAmarillo.jpg',
+        image: 'images/toadamarillo.jpg',
         accounts: [
             { region: 'euw1', riotId: 'LYON Tabe#PANDA' },
             { region: 'euw1', riotId: 'TOAD AMARILLO#TOAD' },
@@ -2778,7 +2778,7 @@ const PLAYERS = [
         name: 'Future',
         country: 'es',
         verified: 'no',
-        image: 'images/Future.jpg',
+        image: 'images/future.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Tatiana Kaer#PAN' },
 // check stream to find more accounts
@@ -2789,7 +2789,7 @@ const PLAYERS = [
         name: 'Toñonen',
         country: 'es',
         verified: 'no',
-        image: 'images/Toñonen.jpg',
+        image: 'images/toñonen.jpg',
         accounts: [
             { region: 'euw1', riotId: 'ToñoNenISBACK#AND' },
 // check stream to find more accounts
@@ -2800,7 +2800,7 @@ const PLAYERS = [
         name: 'IreneRawr',
         country: 'es',
         verified: 'yes',
-        image: 'images/IreneRawr.jpg',
+        image: 'images/irenerawr.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Miss Funas#KERIA' },
             { region: 'euw1', riotId: 'Matahari#RAWR' },
@@ -2811,7 +2811,7 @@ const PLAYERS = [
         name: 'JuanCaravaca',
         country: 'es',
         verified: 'no',
-        image: 'images/JuanCaravaca.jpg',
+        image: 'images/juancaravaca.jpg',
         accounts: [
             { region: 'euw1', riotId: 'ElPitjor#OLD' },
             { region: 'euw1', riotId: 'juankax99#9912' },
@@ -2823,7 +2823,7 @@ const PLAYERS = [
         name: 'Princesita',
         country: 'es',
         verified: 'no',
-        image: 'images/Princesita.jpg',
+        image: 'images/princesita.jpg',
         accounts: [
             { region: 'euw1', riotId: 'pochipocrita#1331' },
 // check stream to find more accounts
@@ -2834,7 +2834,7 @@ const PLAYERS = [
         name: 'Galandarx',
         country: 've',
         verified: 'no',
-        image: 'images/Galandarx.jpg',
+        image: 'images/galandarx.jpg',
         accounts: [
             { region: 'euw1', riotId: 'FreeContent#Galan' },
             { region: 'kr', riotId: 'galandarx#BRIAR' },
@@ -2854,7 +2854,7 @@ const PLAYERS = [
         name: 'Deadlymarkkk',
         country: 'ar',
         verified: 'no',
-        image: 'images/Deadlymarkkk.jpg',
+        image: 'images/deadlymarkkk.jpg',
         accounts: [
             { region: 'la2', riotId: 'Nejire Hado#SB5' },
         ]
@@ -2864,7 +2864,7 @@ const PLAYERS = [
         name: 'Mitsheep',
         country: 'ar',
         verified: 'no',
-        image: 'images/Mitsheep.jpg',
+        image: 'images/mitsheep.jpg',
         accounts: [
             { region: 'la2', riotId: 'Just For Now#SB5' },
             { region: 'euw1', riotId: 'Same Ol Thing#SB4' },
@@ -2875,7 +2875,7 @@ const PLAYERS = [
         name: 'Xipssj',
         country: 'mx',
         verified: 'no',
-        image: 'images/Xipssj.jpg',
+        image: 'images/xipssj.jpg',
         accounts: [
             { region: 'la1', riotId: 'xip#SB5' },
         ]
@@ -2885,7 +2885,7 @@ const PLAYERS = [
         name: 'Meguitan',
         country: 'mx',
         verified: 'no',
-        image: 'images/Meguitan.jpg',
+        image: 'images/meguitan.jpg',
         accounts: [
             { region: 'la1', riotId: 'Meguitan#SB5' },
         ]
@@ -2895,7 +2895,7 @@ const PLAYERS = [
         name: 'Kerfazzz',
         country: 'mx',
         verified: 'no',
-        image: 'images/Kerfazzz.jpg',
+        image: 'images/kerfazzz.jpg',
         accounts: [
             { region: 'la1', riotId: 'La Pampara#SB5' },
         ]
@@ -2905,7 +2905,7 @@ const PLAYERS = [
         name: 'Raiakihito',
         country: 'br',
         verified: 'no',
-        image: 'images/Raiakihito.jpg',
+        image: 'images/raiakihito.jpg',
         accounts: [
             { region: 'br1', riotId: 'Tsuki Himari#SB5' },
         ]
@@ -2915,7 +2915,7 @@ const PLAYERS = [
         name: 'Zerik1ng',
         country: 'br',
         verified: 'no',
-        image: 'images/Zerik1ng.jpg',
+        image: 'images/zerik1ng.jpg',
         accounts: [
             { region: 'br1', riotId: 'false ranker#SB5' },
         ]
@@ -2925,7 +2925,7 @@ const PLAYERS = [
         name: 'Alluklol',
         country: 'br',
         verified: 'no',
-        image: 'images/Alluklol.jpg',
+        image: 'images/alluklol.jpg',
         accounts: [
             { region: 'br1', riotId: 'lokete#SB5' },
         ]
@@ -2935,7 +2935,7 @@ const PLAYERS = [
         name: 'Syunko',
         country: 'es',
         verified: 'no',
-        image: 'images/Syunko.jpg',
+        image: 'images/syunko.jpg',
         accounts: [
             { region: 'euw1', riotId: 'LUIS SUÁREZ#SB5' },
         ]
@@ -2945,7 +2945,7 @@ const PLAYERS = [
         name: 'Xarebalo',
         country: 'es',
         verified: 'no',
-        image: 'images/Xarebalo.jpg',
+        image: 'images/xarebalo.jpg',
         accounts: [
             { region: 'euw1', riotId: 'xArebalo#SB5' },
         ]
@@ -2955,7 +2955,7 @@ const PLAYERS = [
         name: 'Karccass',
         country: 'es',
         verified: 'no',
-        image: 'images/Karccass.jpg',
+        image: 'images/karccass.jpg',
         accounts: [
             { region: 'euw1', riotId: 'DIEGO FORLÁN#SB5' },
         ]
@@ -2965,7 +2965,7 @@ const PLAYERS = [
         name: 'Kase',
         country: 'us',
         verified: 'no',
-        image: 'images/Kase.jpg',
+        image: 'images/kase.jpg',
         accounts: [
             { region: 'na1', riotId: 'Rock Lee#SB5' },
         ]
@@ -2975,7 +2975,7 @@ const PLAYERS = [
         name: 'Bejjaniii',
         country: 'us',
         verified: 'no',
-        image: 'images/Bejjaniii.jpg',
+        image: 'images/bejjaniii.jpg',
         accounts: [
             { region: 'na1', riotId: 'bxjjaniil#SB5' },
         ]
@@ -2995,7 +2995,7 @@ const PLAYERS = [
         name: 'Engruesado',
         country: 'ar',
         verified: 'no',
-        image: 'images/Engruesado.jpg',
+        image: 'images/engruesado.jpg',
         accounts: [
             { region: 'la2', riotId: 'アンディ愛してるよ#SB5' },
         ]
@@ -3005,7 +3005,7 @@ const PLAYERS = [
         name: 'Rellibach',
         country: 'ar',
         verified: 'no',
-        image: 'images/Rellibach.jpg',
+        image: 'images/rellibach.jpg',
         accounts: [
             { region: 'la2', riotId: 'Rellimada#SB5' },
         ]
@@ -3015,7 +3015,7 @@ const PLAYERS = [
         name: 'Fernasus145',
         country: 'ar',
         verified: 'no',
-        image: 'images/Fernasus145.jpg',
+        image: 'images/fernasus145.jpg',
         accounts: [
             { region: 'la2', riotId: 'i am a good boy#SB5' },
         ]
@@ -3025,7 +3025,7 @@ const PLAYERS = [
         name: 'ElGuayacoNois',
         country: 'mx',
         verified: 'no',
-        image: 'images/ElGuayacoNois.jpg',
+        image: 'images/elguayaconois.jpg',
         accounts: [
             { region: 'la1', riotId: 'Kirby#SB5' },
         ]
@@ -3035,7 +3035,7 @@ const PLAYERS = [
         name: 'Saitamachallenge_',
         country: 'mx',
         verified: 'no',
-        image: 'images/Saitamachallenge_.jpg',
+        image: 'images/saitamachallenge_.jpg',
         accounts: [
             { region: 'la1', riotId: 'Poro bélico#SB5' },
         ]
@@ -3045,7 +3045,7 @@ const PLAYERS = [
         name: 'Neribyte',
         country: 'mx',
         verified: 'no',
-        image: 'images/Neribyte.jpg',
+        image: 'images/neribyte.jpg',
         accounts: [
             { region: 'la1', riotId: 'Neribyte#SB5' },
         ]
@@ -3055,7 +3055,7 @@ const PLAYERS = [
         name: 'Doble_gun',
         country: 'es',
         verified: 'no',
-        image: 'images/Doble_gun.jpg',
+        image: 'images/doble_gun.jpg',
         accounts: [
             { region: 'euw1', riotId: 'ShadowOfVayne#SB5' },
         ]
@@ -3075,7 +3075,7 @@ const PLAYERS = [
         name: 'JumpingQQQ',
         country: 'es',
         verified: 'no',
-        image: 'images/JumpingQQQ.jpg',
+        image: 'images/jumpingqqq.jpg',
         accounts: [
             { region: 'euw1', riotId: 'JumpingQQQ#SB4' },
         ]
@@ -3085,7 +3085,7 @@ const PLAYERS = [
         name: 'TThompson',
         country: 'es',
         verified: 'no',
-        image: 'images/TThompson.jpg',
+        image: 'images/tthompson.jpg',
         accounts: [
             { region: 'euw1', riotId: 't t h#sb4' },
         ]
@@ -3095,7 +3095,7 @@ const PLAYERS = [
         name: 'Zhaher',
         country: 'es',
         verified: 'no',
-        image: 'images/Zhaher.jpg',
+        image: 'images/zhaher.jpg',
         accounts: [
             { region: 'euw1', riotId: 'SANJUANINO#SB4' },
         ]
@@ -3105,7 +3105,7 @@ const PLAYERS = [
         name: 'Camilonicolau',
         country: 'es',
         verified: 'no',
-        image: 'images/Camilonicolau.jpg',
+        image: 'images/camilonicolau.jpg',
         accounts: [
             { region: 'euw1', riotId: 'NICOLAULA#SB4' },
         ]
@@ -3115,7 +3115,7 @@ const PLAYERS = [
         name: 'Puminhalol',
         country: 'br',
         verified: 'no',
-        image: 'images/Puminhalol.jpg',
+        image: 'images/puminhalol.jpg',
         accounts: [
             { region: 'br1', riotId: 'puminhalol#SB4' },
         ]
@@ -3125,7 +3125,7 @@ const PLAYERS = [
         name: 'Booki',
         country: 'es',
         verified: 'no',
-        image: 'images/Booki.jpg',
+        image: 'images/booki.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Booking#sb4' },
             { region: 'la2', riotId: 'Twtv BookiLol#SB5' },
@@ -3136,7 +3136,7 @@ const PLAYERS = [
         name: 'Nvillada',
         country: 'es',
         verified: 'no',
-        image: 'images/Nvillada.jpg',
+        image: 'images/nvillada.jpg',
         accounts: [
             { region: 'euw1', riotId: 'nvillada#SB4' },
         ]
@@ -3146,7 +3146,7 @@ const PLAYERS = [
         name: 'Naitz',
         country: 'es',
         verified: 'no',
-        image: 'images/Naitz.jpg',
+        image: 'images/naitz.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Ryota Kise#SB4' },
         ]
@@ -3156,7 +3156,7 @@ const PLAYERS = [
         name: 'Mataz',
         country: 'es',
         verified: 'no',
-        image: 'images/Mataz.jpg',
+        image: 'images/mataz.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Mataz#sb4' },
         ]
@@ -3166,7 +3166,7 @@ const PLAYERS = [
         name: 'Demy',
         country: 'es',
         verified: 'no',
-        image: 'images/Demy.jpg',
+        image: 'images/demy.jpg',
         accounts: [
             { region: 'euw1', riotId: 'kick demygd#sb4' },
         ]
@@ -3176,7 +3176,7 @@ const PLAYERS = [
         name: 'Fayonix',
         country: 'es',
         verified: 'no',
-        image: 'images/Fayonix.jpg',
+        image: 'images/fayonix.jpg',
         accounts: [
             { region: 'euw1', riotId: 'FXYX#SB4' },
         ]
@@ -3186,7 +3186,7 @@ const PLAYERS = [
         name: 'Skyy',
         country: 'es',
         verified: 'no',
-        image: 'images/Skyy.jpg',
+        image: 'images/skyy.jpg',
         accounts: [
             { region: 'euw1', riotId: 'Croketita#SB4' },
         ]
@@ -3196,7 +3196,7 @@ const PLAYERS = [
         name: 'Duelista',
         country: 'br',
         verified: 'no',
-        image: 'images/Duelista.jpg',
+        image: 'images/duelista.jpg',
         accounts: [
             { region: 'br1', riotId: '123edf5rff55f#SB3' },
         ]
@@ -3216,7 +3216,7 @@ const PLAYERS = [
         name: 'Kanaxi',
         country: 'br',
         verified: 'no',
-        image: 'images/Kanaxi.jpg',
+        image: 'images/kanaxi.jpg',
         accounts: [
             { region: 'br1', riotId: 'BIEN DE VIVO#SB3' },
         ]
@@ -3226,7 +3226,7 @@ const PLAYERS = [
         name: 'Arlon',
         country: 'br',
         verified: 'no',
-        image: 'images/Arlon.jpg',
+        image: 'images/arlon.jpg',
         accounts: [
             { region: 'br1', riotId: 'TiWTVMarlon547#SB3' },
         ]
@@ -3236,7 +3236,7 @@ const PLAYERS = [
         name: 'Martote',
         country: 'br',
         verified: 'no',
-        image: 'images/Martote.jpg',
+        image: 'images/martote.jpg',
         accounts: [
             { region: 'br1', riotId: 'md437d43#SB3' },
         ]
@@ -3246,7 +3246,7 @@ const PLAYERS = [
         name: '1Neadz',
         country: 'ar',
         verified: 'no',
-        image: 'images/1Neadz.jpg',
+        image: 'images/1neadz.jpg',
         accounts: [
             { region: 'la2', riotId: '1Neadz#SB3' },
         ]
@@ -3256,7 +3256,7 @@ const PLAYERS = [
         name: 'Zeypherlol',
         country: 'ar',
         verified: 'no',
-        image: 'images/Zeypherlol.jpg',
+        image: 'images/zeypherlol.jpg',
         accounts: [
             { region: 'la2', riotId: 'COLOMBIAPARCE#SB3' },
         ]
@@ -3266,7 +3266,7 @@ const PLAYERS = [
         name: 'Yasikof_',
         country: 'ar',
         verified: 'no',
-        image: 'images/Yasikof_.jpg',
+        image: 'images/yasikof_.jpg',
         accounts: [
             { region: 'la2', riotId: 'Yasikof#SB3' },
             { region: 'euw1', riotId: 'Teacherkof#sb4' },
@@ -3277,7 +3277,7 @@ const PLAYERS = [
         name: 'Fix',
         country: 'ar',
         verified: 'no',
-        image: 'images/Fix.jpg',
+        image: 'images/fix.jpg',
         accounts: [
             { region: 'la2', riotId: '2mundiales1msi#SB3' },
 //            { region: 'la2', riotId: 'MERCENARY1' }, // soloboomchallenge
@@ -3288,7 +3288,7 @@ const PLAYERS = [
         name: 'FrixterADC',
         country: 'ar',
         verified: 'no',
-        image: 'images/FrixterADC.jpg',
+        image: 'images/frixteradc.jpg',
         accounts: [
             { region: 'la2', riotId: 'GORDITO COMUN#SB3' },
         ]
@@ -3298,7 +3298,7 @@ const PLAYERS = [
         name: 'Ezequielduartte',
         country: 'ar',
         verified: 'no',
-        image: 'images/Ezequielduartte.jpg',
+        image: 'images/ezequielduartte.jpg',
         accounts: [
             { region: 'la2', riotId: '140KG BENCHPRESS#SB3' },
         ]
@@ -3308,7 +3308,7 @@ const PLAYERS = [
         name: 'Pishey1',
         country: 'ar',
         verified: 'no',
-        image: 'images/Pishey1.jpg',
+        image: 'images/pishey1.jpg',
         accounts: [
             { region: 'la2', riotId: 'Pájo#SB3' },
         ]
@@ -3318,7 +3318,7 @@ const PLAYERS = [
         name: 'Shookz',
         country: 'gb',
         verified: 'no',
-        image: 'images/Shookz.jpg',
+        image: 'images/shookz.jpg',
         accounts: [
 //            { region: 'euw1', riotId: 'Flower Garden' },
             { region: 'la2', riotId: 'Flower Garden#SB4' },
@@ -3330,7 +3330,7 @@ const PLAYERS = [
         name: 'Tomnam',
         country: 'es',
         verified: 'no',
-        image: 'images/Tomnam.jpg',
+        image: 'images/tomnam.jpg',
         accounts: [
             { region: 'la2', riotId: 'hARAkiRi1#LAS' },
         ]
@@ -3340,7 +3340,7 @@ const PLAYERS = [
         name: 'Ustanaak',
         country: 'es',
         verified: 'no',
-        image: 'images/Ustanaak.jpg',
+        image: 'images/ustanaak.jpg',
         accounts: [
 //            { region: 'euw1', riotId: 'TILTEANAK' },
         ]
@@ -3350,7 +3350,7 @@ const PLAYERS = [
         name: 'Sonykyyy',
         country: 'ar',
         verified: 'no',
-        image: 'images/Sonykyyy.jpg',
+        image: 'images/sonykyyy.jpg',
         accounts: [
             { region: 'la2', riotId: 'Malcorra#LAS' },
         ]
@@ -3360,7 +3360,7 @@ const PLAYERS = [
         name: 'Adalis',
         country: 'ar',
         verified: 'no',
-        image: 'images/Adalis.jpg',
+        image: 'images/adalis.jpg',
         accounts: [
             { region: 'la2', riotId: 'Va x ti Azherit#LAS' },
         ]
@@ -3370,7 +3370,7 @@ const PLAYERS = [
         name: 'Lechigg',
         country: 'ar',
         verified: 'no',
-        image: 'images/Lechigg.jpg',
+        image: 'images/lechigg.jpg',
         accounts: [
             { region: 'la2', riotId: 'LAS 0 macro#LAS' },
         ]
@@ -3380,7 +3380,7 @@ const PLAYERS = [
         name: 'Octatoxic',
         country: 'ar',
         verified: 'no',
-        image: 'images/Octatoxic.jpg',
+        image: 'images/octatoxic.jpg',
         accounts: [
             { region: 'la2', riotId: 'Octatoxic Punk#LAS' },
         ]
@@ -3390,7 +3390,7 @@ const PLAYERS = [
         name: 'Eminatr1x',
         country: 'ar',
         verified: 'no',
-        image: 'images/Eminatr1x.jpg',
+        image: 'images/eminatr1x.jpg',
         accounts: [
             { region: 'la2', riotId: 'Nefelibata1#SB3' },
 //            { region: 'la2', riotId: 'Jane Birkin' }, // soloboomchallenge
@@ -3401,7 +3401,7 @@ const PLAYERS = [
         name: 'Kaze',
         country: 'ar',
         verified: 'no',
-        image: 'images/Kaze.jpg',
+        image: 'images/kaze.jpg',
         accounts: [
             { region: 'br1', riotId: 'nbayoungkaze' },
 //            { region: 'la2', riotId: 'GLASSY SMILEy' },
@@ -3412,7 +3412,7 @@ const PLAYERS = [
         name: 'Kz',
         country: 'ar',
         verified: 'no',
-        image: 'images/Kz.jpg',
+        image: 'images/kz.jpg',
         accounts: [
             { region: 'br1', riotId: 'Ryuk me leva pfv#br1' },
         ]
@@ -3422,7 +3422,7 @@ const PLAYERS = [
         name: 'Ude',
         country: 'ar',
         verified: 'no',
-        image: 'images/Ude.jpg',
+        image: 'images/ude.jpg',
         accounts: [
             { region: 'br1', riotId: 'kitemachine69#BR1' },
         ]
@@ -3432,7 +3432,7 @@ const PLAYERS = [
         name: 'Pancake',
         country: 'ar',
         verified: 'no',
-        image: 'images/Pancake.jpg',
+        image: 'images/pancake.jpg',
         accounts: [
             { region: 'br1', riotId: 'Pankk1#BR1' },
             { region: 'la2', riotId: 'bingzi#SB3' },
@@ -3443,7 +3443,7 @@ const PLAYERS = [
         name: 'Godeto',
         country: 'ar',
         verified: 'no',
-        image: 'images/Godeto.jpg',
+        image: 'images/godeto.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'jaeneung' },
         ]
@@ -3453,7 +3453,7 @@ const PLAYERS = [
         name: 'Trashy',
         country: 'ar',
         verified: 'no',
-        image: 'images/Trashy.jpg',
+        image: 'images/trashy.jpg',
         accounts: [
             { region: 'br1', riotId: 'zzzzzzx1#BR1' },
         ]
@@ -3463,7 +3463,7 @@ const PLAYERS = [
         name: 'Cabez00n',
         country: 'ar',
         verified: 'no',
-        image: 'images/Cabez00n.jpg',
+        image: 'images/cabez00n.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'KB ZN' },
         ]
@@ -3473,7 +3473,7 @@ const PLAYERS = [
         name: 'Kimi',
         country: 'ar',
         verified: 'no',
-        image: 'images/Kimi.jpg',
+        image: 'images/kimi.jpg',
         accounts: [
             { region: 'br1', riotId: 'FAN DE COLACAO' },
 //            { region: 'la2', riotId: 'KINGMI' },
@@ -3485,7 +3485,7 @@ const PLAYERS = [
         name: 'Sufukato',
         country: 'ar',
         verified: 'no',
-        image: 'images/Sufukato.jpg',
+        image: 'images/sufukato.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'Pikachu Watôn' },
         ]
@@ -3495,7 +3495,7 @@ const PLAYERS = [
         name: 'Malendario',
         country: 'ar',
         verified: 'no',
-        image: 'images/Malendario.jpg',
+        image: 'images/malendario.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'Don Cangrejo' },
         ]
@@ -3505,7 +3505,7 @@ const PLAYERS = [
         name: 'Imsalem',
         country: 'ar',
         verified: 'no',
-        image: 'images/Imsalem.jpg',
+        image: 'images/imsalem.jpg',
         accounts: [
             { region: 'br1', riotId: 'COMPRE WINRAR#79390' },
         ]
@@ -3515,7 +3515,7 @@ const PLAYERS = [
         name: 'Xypher',
         country: 'ar',
         verified: 'no',
-        image: 'images/Xypher.jpg',
+        image: 'images/xypher.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'chilpa1' },
         ]
@@ -3525,7 +3525,7 @@ const PLAYERS = [
         name: 'Slow',
         country: 'ar',
         verified: 'no',
-        image: 'images/Slow.jpg',
+        image: 'images/slow.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'idk what to do' },
         ]
@@ -3545,7 +3545,7 @@ const PLAYERS = [
         name: 'Gveze',
         country: 'ar',
         verified: 'no',
-        image: 'images/Gveze.jpg',
+        image: 'images/gveze.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'iGveze' },
         ]
@@ -3555,7 +3555,7 @@ const PLAYERS = [
         name: 'Ivanwake',
         country: 'ar',
         verified: 'no',
-        image: 'images/Ivanwake.jpg',
+        image: 'images/ivanwake.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'kyubi' },
         ]
@@ -3575,7 +3575,7 @@ const PLAYERS = [
         name: 'Meno',
         country: 'ar',
         verified: 'no',
-        image: 'images/Meno.jpg',
+        image: 'images/meno.jpg',
         accounts: [
             { region: 'br1', riotId: 'AMENOOOO#BR1' },
         ]
@@ -3595,7 +3595,7 @@ const PLAYERS = [
         name: 'Colacao',
         country: 'ar',
         verified: 'no',
-        image: 'images/Colacao.jpg',
+        image: 'images/colacao.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'VUYAH INDUSTRIES' },
         ]
@@ -3605,7 +3605,7 @@ const PLAYERS = [
         name: 'Soul',
         country: 'ar',
         verified: 'no',
-        image: 'images/Soul.jpg',
+        image: 'images/soul.jpg',
         accounts: [
             { region: 'br1', riotId: 'mpeso#BR1' },
         ]
@@ -3645,7 +3645,7 @@ const PLAYERS = [
         name: 'Mantarraya',
         country: 'ar',
         verified: 'no',
-        image: 'images/Mantarraya.jpg',
+        image: 'images/mantarraya.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'ME ANOTO 1 AMIGO' },
         ]
@@ -3715,7 +3715,7 @@ const PLAYERS = [
         name: 'Nobody',
         country: 'ar',
         verified: 'no',
-        image: 'images/Nobody.jpg',
+        image: 'images/nobody.jpg',
         accounts: [
             { region: 'br1', riotId: 'DWG KIAA#BR1' },
         ]
@@ -3755,7 +3755,7 @@ const PLAYERS = [
         name: 'Hooded',
         country: 'ar',
         verified: 'no',
-        image: 'images/Hooded.jpg',
+        image: 'images/hooded.jpg',
         accounts: [
             { region: 'br1', riotId: 'mind prison#BR1' },
         ]
@@ -3765,7 +3765,7 @@ const PLAYERS = [
         name: 'Longinius',
         country: 'ar',
         verified: 'no',
-        image: 'images/Longinius.jpg',
+        image: 'images/longinius.jpg',
         accounts: [
             { region: 'br1', riotId: 'Longaniza#BR1' },
             { region: 'la2', riotId: 'Longitech#SB3' },
@@ -3786,7 +3786,7 @@ const PLAYERS = [
         name: 'Baneadou',
         country: 'ar',
         verified: 'no',
-        image: 'images/Baneadou.jpg',
+        image: 'images/baneadou.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'GorDOUtlius' },
         ]
@@ -3806,7 +3806,7 @@ const PLAYERS = [
         name: 'Akaai Army',
         country: 'ar',
         verified: 'no',
-        image: 'images/Akaai Army.jpg',
+        image: 'images/akaai army.jpg',
         accounts: [
             { region: 'br1', riotId: 'SillaArmy#BR1' },
         ]
@@ -3826,7 +3826,7 @@ const PLAYERS = [
         name: 'Ghetoblaster',
         country: 'ar',
         verified: 'no',
-        image: 'images/Ghetoblaster.jpg',
+        image: 'images/ghetoblaster.jpg',
         accounts: [
             { region: 'br1', riotId: 'Bolivian Surfer#BR1' },
         ]
@@ -3846,7 +3846,7 @@ const PLAYERS = [
         name: 'Joker Was Here',
         country: 'ar',
         verified: 'no',
-        image: 'images/Joker Was Here.jpg',
+        image: 'images/joker was here.jpg',
         accounts: [
             { region: 'br1', riotId: 'Joker was Pyke#BR1' },
         ]
@@ -3856,7 +3856,7 @@ const PLAYERS = [
         name: 'Juansha',
         country: 'ar',
         verified: 'no',
-        image: 'images/Juansha.jpg',
+        image: 'images/juansha.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'Juancha OFF Drug' },
         ]
@@ -3866,7 +3866,7 @@ const PLAYERS = [
         name: 'Hachi',
         country: 'ar',
         verified: 'no',
-        image: 'images/Hachi.jpg',
+        image: 'images/hachi.jpg',
         accounts: [
             { region: 'br1', riotId: 'Memory Lane#BR1' },
         ]
@@ -3876,7 +3876,7 @@ const PLAYERS = [
         name: 'ZyLar',
         country: 'ar',
         verified: 'no',
-        image: 'images/ZyLar.jpg',
+        image: 'images/zylar.jpg',
         accounts: [
             { region: 'br1', riotId: 'ZyLar#BR1' },
         ]
@@ -3906,7 +3906,7 @@ const PLAYERS = [
         name: 'TalonAbuser1',
         country: 'ar',
         verified: 'no',
-        image: 'images/TalonAbuser1.jpg',
+        image: 'images/talonabuser1.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'TalonAbuser1' },
         ]
@@ -3956,7 +3956,7 @@ const PLAYERS = [
         name: 'Brunaldo',
         country: 'ar',
         verified: 'no',
-        image: 'images/Brunaldo.jpg',
+        image: 'images/brunaldo.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'Brunaldoo' },
         ]
@@ -3966,7 +3966,7 @@ const PLAYERS = [
         name: 'Hugrock',
         country: 'ar',
         verified: 'no',
-        image: 'images/Hugrock.jpg',
+        image: 'images/hugrock.jpg',
         accounts: [
             { region: 'br1', riotId: 'SOS COLOMBIA#BR1' },
         ]
@@ -3986,7 +3986,7 @@ const PLAYERS = [
         name: 'Slune36',
         country: 'ar',
         verified: 'no',
-        image: 'images/Slune36.jpg',
+        image: 'images/slune36.jpg',
         accounts: [
 //            { region: 'la2', riotId: 'YouTubeSlune' },
         ]
@@ -4038,7 +4038,7 @@ const PLAYERS = [
         name: 'Arktheos (Aribo)',
         country: 'ro',
         verified: 'no',
-        image: 'images/Arktheos.png',
+        image: 'images/arktheos.png',
         accounts: [
             { region: 'euw1', riotId: 'FULLCLEAR DELUXE#PUSH' },
             { region: 'euw1', riotId: 'z33D0lVc0hbsNT2a#EUW' },
