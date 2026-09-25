@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All The Mastery Points (Beta)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.5.0/css/flag-icons.min.css">
+
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme') || 'dark';
+                document.documentElement.setAttribute('data-theme', theme);
+                var accent = localStorage.getItem('accent');
+                if (accent) document.documentElement.style.setProperty('--accent', accent);
+            } catch (e) { }
+        })();
+    </script>
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="header-left">
+<a href="https://discord.gg/HVNmZjg6bN" class="discord-link" target="_blank" rel="noopener noreferrer" title="Join our Discord" aria-label="Join our Discord">
+    <img src="images/discord.png" alt="Discord" class="header-icon">
+</a>
+
+<button id="favorites-toggle" class="info-btn" title="Show favorites" aria-label="Show favorites" aria-pressed="false">
+    <img src="images/favorites.png" alt="Favorites" class="header-icon">
+</button>
+
+            <button id="info-btn" class="info-btn" title="About and Legal" aria-label="About and legal notice">
+                <img src="images/information.png" alt="About and Legal" class="header-icon">
+            </button>
+        </div>
+
+        <div class="header-center">
+            <span class="site-title">All The Mastery Points (Beta)</span>
+        </div>
+
+        <div class="header-right">
+            <button id="theme-toggle" title="Switch between dark and light mode">Theme: Dark</button>
+
+            <div class="accent-picker">
+                <button id="accent-toggle" title="Choose the accent colour" aria-haspopup="true" aria-expanded="false">
+                    <span class="accent-swatch" id="accent-swatch" aria-hidden="true"></span>
+                    <span>Accent</span>
+                </button>
+
+                <div id="accent-menu" class="accent-menu" hidden>
+                    <div class="accent-slider" id="accent-slider" role="slider" tabindex="0"
+                         aria-label="Accent hue" aria-valuemin="0" aria-valuemax="360">
+                        <div class="accent-slider-track" id="accent-slider-track"></div>
+                        <div class="accent-slider-handle" id="accent-slider-handle"></div>
+                    </div>
+
+                    <div class="accent-hex-row">
+                        <input type="color" id="accent-color-input" value="#f5f223" aria-label="Accent colour picker">
+                        <input type="text" id="accent-hex-input" maxlength="7" spellcheck="false"
+                               autocomplete="off" aria-label="Accent colour hex value">
+                    </div>
+
+                    <button type="button" id="accent-rainbow">Rainbow: OFF</button>
+
+                    <div class="accent-speed" id="accent-speed">
+                        <div class="accent-speed-head">
+                            <span>Rainbow speed</span>
+                            <span class="accent-speed-value" id="accent-speed-value">4.9s</span>
+                        </div>
+                        <div class="accent-slider accent-speed-slider" id="accent-speed-slider" role="slider" tabindex="0"
+                             aria-label="Rainbow speed" aria-valuemin="0" aria-valuemax="100">
+                            <div class="accent-slider-track" id="accent-speed-track"></div>
+                            <div class="accent-slider-handle" id="accent-speed-handle"></div>
+                        </div>
+                    </div>
+
+                    <button type="button" id="accent-reset">Reset to default</button>
+                </div>
+            </div>
+
+            <button id="topchamp-toggle" title="Show each player's most played champion instead of their total points">OTP Mode: OFF</button>
+
+            <button id="classic-toggle">Classic: OFF</button>
+            <button id="tooltip-toggle">Tooltips: ON</button>
+        </div>
+    </header>
+
+    <div class="split">
+
+        <section class="left-panel">
+            <h2 class="panel-title has-stats">
+                <span id="panel-title-text">High Profile Players</span> -
+                <span class="panel-stat" id="player-count-badge"></span> players,
+                <span class="panel-stat" id="account-count-badge"></span> accounts
+            </h2>
+
+<div class="gallery-filters">
+    <input
+        id="player-search"
+        type="text"
+        placeholder="Search by name, Riot ID, or tag..."
+        autocomplete="off"
+        spellcheck="false"
+    />
+    <div id="country-filter" class="country-filter-slot"></div>
+    <select id="region-filter" title="Filter by main region">
+        <option value="">All regions</option>
+    </select>
+</div>
+
+            <div id="gallery" class="gallery"></div>
+        </section>
+
+        <section class="right-panel">
+
+            <div id="search-view">
+                <h2 class="panel-title">Self Look-Up</h2>
+
+                <div id="accounts"></div>
+                <button id="add-account-btn">+ Add Account</button>
+                <button id="search-btn">Combine Mastery</button>
+
+                <div class="time-played-row">
+                    <p id="lookup-time-played"></p>
+                    <button type="button" id="save-favorite-btn" class="favorite-star"
+                            title="Save this search to favorites"
+                            aria-label="Save this search to favorites" hidden>★</button>
+                </div>
+
+                <div id="error-msg"></div>
+                <ul id="mastery-list"></ul>
+            </div>
+
+            <div id="player-view" hidden>
+                <div class="view-header">
+                    <button id="back-btn">Back to search</button>
+                    <div class="view-header-right">
+                        <button id="refresh-btn">Refresh</button>
+                        <button id="history-btn">History</button>
+                    </div>
+                </div>
+                <h2 class="panel-title" id="player-view-name"></h2>
+                <p id="player-view-sub" class="subtitle"></p>
+
+                <div id="player-error-msg"></div>
+                <ul id="player-mastery-list"></ul>
+            </div>
+        </section>
+    </div>
+
+<div id="info-overlay" hidden>
+    <div id="info-modal" role="dialog" aria-modal="true" aria-labelledby="info-title">
+        <button id="info-close" aria-label="Close">&times;</button>
+        <h2 id="info-title">About and Legal</h2>
+
+        <div class="info-body">
+            <p>
+                Welcome to <strong>All The Mastery Points</strong>, or <strong>ATMP</strong> for short!
+                All The Mastery Points is a website that archives pro players' and streamers' accounts,
+                in order to calculate and showcase their total mastery points.
+            </p>
+            <p>
+                You can also do your own calculations with your own account, and mark them as favorite,
+                so you don't have to look yourself or someone else up in the future.
+            </p>
+
+            <h3>How and who can be added</h3>
+            <p>
+                If you want to suggest who to add to the list of high profile players, send their
+                socials in <code>#who-to-add</code> on our Discord server, like their Twitch channel or
+                Twitter account, and we will do our research to add them. You can aslo DM LxVer8 if
+                you don't want to join the server.
+            </p>
+            <p>
+                If the person you want added to the website is on this server, or it's even yourself,
+                open a ticket and we will get in contact with you to add them or you.
+            </p>
+
+            <h3>If you:</h3>
+            <ul>
+                <li>
+                    Wish to become a <strong>Helper</strong>, open a ticket or DM me. Your job
+                    would be to find / verify that someone's account is actually theirs, or if a
+                    streamer you know has a new account.
+                </li>
+                <li>
+                    Want to be removed from the High Profile Players, or remove an account of
+                    yours, open a ticket or DM LxVer8 on Discord.
+                </li>
+                <li>
+                    Found your account on someone else's profile, open a ticket or DM LxVer8
+                    on Discord.
+                </li>
+                <li>
+                    Want to customize your profile by changing the picture or name, open a
+                    ticket or DM LxVer8 on Discord.
+                </li>
+            </ul>
+
+            <h3>Quick reminder:</h3>
+            <p>
+                We will accept any kind of account to the website, even if it was permanently
+                banned or from the PBE. As long as you have the name and ID of the account, most
+                accounts stay available for the API.
+            </p>
+            <p>
+                We will, however, <strong>not</strong> accept accounts in which you play that are
+                not mainly yours. For example, if you boosted someone's account. That account
+                will not be added, since it is not directly yours.
+            </p>
+            <p>
+                And just as a reminder, neither me nor ATMP are affiliated to Riot Games at all.
+                We will <strong>NEVER</strong> ask for access to your account whatsoever; it is
+                not needed in order to legitimize that an account is yours. If someone does reach
+                out to you and asks for any information, please block them, then open a ticket,
+                and report them to us.
+            </p>
+            <p>
+                If, for whatever reason, Riot Games decides to use this website to find people
+                sharing accounts (which I doubt they will anyway), neither me nor ATMP is
+                responsible for whatever can happen to your account.
+            </p>
+            <p class="info-warning">
+                ATMP is <strong>VERY</strong> early in development, and it can take literally
+                <strong>MONTHS</strong> for Riot Games to provide the API key needed to move the
+                project to the next level.
+            </p>
+
+            <hr>
+
+            <h3>Legal Notice</h3>
+            <p>
+                All The Mastery Points isn't endorsed by Riot Games and doesn't reflect the
+                views or opinions of Riot Games or anyone officially involved in producing or
+                managing Riot Games properties. Riot Games, and all associated properties are
+                trademarks or registered trademarks of Riot Games, Inc.
+            </p>
+        </div>
+    </div>
+</div>
+
+    <div id="history-overlay" hidden>
+        <div id="history-modal" role="dialog" aria-modal="true" aria-labelledby="history-title">
+            <button id="history-close" aria-label="Close">&times;</button>
+            <h2 id="history-title">Mastery History</h2>
+            <div id="history-body"></div>
+        </div>
+    </div>
+
+    <div id="favorite-overlay" hidden>
+    <div id="favorite-modal" role="dialog" aria-modal="true" aria-labelledby="favorite-title">
+        <button id="favorite-close" aria-label="Close">&times;</button>
+        <h2 id="favorite-title">Save to Favorites</h2>
+
+        <label class="favorite-field">
+            <span>Name</span>
+            <input type="text" id="favorite-name-input" maxlength="40"
+                   placeholder="My favorite search" autocomplete="off" spellcheck="false">
+        </label>
+
+        <div class="favorite-field">
+            <span>Country</span>
+            <div id="favorite-country-input"></div>
+        </div>
+
+        <label class="favorite-field">
+            <span>Image (optional)</span>
+            <input type="file" id="favorite-image-input" accept="image/*">
+        </label>
+
+        <div class="favorite-image-preview" id="favorite-image-preview"></div>
+
+        <div class="favorite-field">
+            <span>Accounts</span>
+            <div id="favorite-accounts" class="favorite-accounts"></div>
+            <button type="button" id="favorite-add-account" class="favorite-add-account">+ Add Account</button>
+        </div>
+
+        <p id="favorite-error" class="favorite-error"></p>
+
+        <button id="favorite-save-btn">Save Favorite</button>
+    </div>
+</div>
+
+    <div id="mastery-tooltip" hidden></div>
+
+    <script src="players.js"></script>
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="ui.js"></script>
+    <script src="theme.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
