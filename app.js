@@ -317,7 +317,7 @@ loadChampionData().then(() => {
 });
 
 loadAllPlayerCaches().then(() => {
-    if (dom.regionFilter.value || topChampMode || favoritesMode) buildPlayerGallery();
+    buildPlayerGallery();
 });
 
 setTooltipsEnabled(savedFlag(LS.tooltips, true));

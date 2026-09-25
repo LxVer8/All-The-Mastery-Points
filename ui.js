@@ -840,16 +840,18 @@ async function loadAllPlayerCaches() {
     await Promise.all(missing.map(async player => {
         try {
             const cached = await fetchPlayerCache(player.id);
-            if (cached && Array.isArray(cached.list) && cached.list.length > 0) {
-                player.topChamp = {
-                    championId: cached.list[0].championId,
-                    points:     cached.list[0].points
-                };
-                player.championPoints = new Map(
-                    cached.list.map(m => [String(m.championId), m.points])
-                );
-                buildRegionData(player, cached.list);
-            }
+                if (cached && Array.isArray(cached.list) && cached.list.length > 0) {
+                    player.topChamp = {
+                        championId: cached.list[0].championId,
+                        points:     cached.list[0].points
+                    };
+                    player.championPoints = new Map(
+                        cached.list.map(m => [String(m.championId), m.points])
+                    );
+                    player.totalPoints = cached.totalPoints || player.totalPoints || 0;
+                    player.lastUpdated = cached.updated || player.lastUpdated;
+                    buildRegionData(player, cached.list);
+                }
         } catch (e) {  }
     }));
 }
